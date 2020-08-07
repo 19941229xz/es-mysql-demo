@@ -1,0 +1,22 @@
+server:
+  port: 1010
+
+spring:
+  application:
+    name: es-mysql
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/vue_admin?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8
+    username: root
+    password: 12345
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+  rabbitmq:
+    addresses: 47.102.213.152:5672
+    password: 123456
+    username: rabbitmq
+
+  data:
+    elasticsearch:
+      cluster-nodes: localhost:9300
